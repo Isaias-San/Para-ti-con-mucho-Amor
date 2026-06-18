@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Feliz día del Padre</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <section id="inicio">
+        <div class="estrellas"></div>
+        <h1 class="titulo"> Feliz día del Padre</h1>
+        <p class="subtitulo"> Para el mejor papá del mundo ❤️</p>
+        <button onclick="abrirCarta()"> Abrir mi regalo 🎁</button>
+    </section>
+
+    <section id="carta">
+        <div class="sobre">
+            <div class="cinta"></div>
+            <div class="corazon">❤️</div>
+            <h2>Querido Papá</h2>
+            <p>
+                Jose Teofilo Sandoval Siesquen<br><br>
+
+                Hoy queremos contemplar desde afuera la hermosa historia que has construido.<br><br>
+                No cualquiera puede darse la vuelta y ver con orgullo el fruto de tanto esfuerzo: Una familia unida y fuerte de cuatro hijos, tres hombres y una mujer.<br><br>
+
+                A mis tolonchos les enseñaste a ser fuertes y trabajadores; a tu única hija, la rodeaste de esa ternura única de papá.<br><br>
+                Hoy, los cuatro caminan con la frente en alto gracias al pilar que has sido para ellos.<br><br>
+
+                Gracias por ser la raíz de este hogar y por demostrar que el amor de un padre es el lazo más fuerte de todos.<br><br>
+
+                Con profunda admiración y todo nuestro cariño,<br><br>
+                Tus cuatro hijos<br><br>
+                
+                💙 FELIZ DIA DEL PADRE💙<br><br>
+            </p>
+                <button onclick="verFotos()">
+                    Ver nuestros recuerdos 📸
+                </button>
+    </section>
+
+    <section id="galeria">
+        <h2>Nuestros mejores recuerdos😎</h2>
+        <div class="foto-principal">
+            <img src="fotos/foto1.jpg" alt="Foto 1" onclick="abrirModal(this)">
+        </div>
+
+        <div class="contenedor-fotos">
+            <img src="fotos/foto2.jpg" onclick="abrirModal(this)">
+            <img src="fotos/foto3.jpg" onclick="abrirModal(this)">
+            <img src="fotos/foto4.jpg" onclick="abrirModal(this)">
+            <img src="fotos/foto5.jpg" onclick="abrirModal(this)">
+            <img src="fotos/foto6.jpg" onclick="abrirModal(this)">
+            <img src="fotos/foto7.jpg" onclick="abrirModal(this)">
+        </div>
+
+        <p class="final">
+           💛Hecho con amor para el mejor papá del mundo💛<br><br>
+
+            ❤️ Feliz Día del Padre ❤️
+        </p>
+
+
+
+        <button onclick="volverInicio()">
+            🏠 Volver al inicio
+        </button>
+
+</section>
+    </section>
+<script src="script.js"></script>
+</body>
+<!-- Ventana emergente para zoom -->
+<div id="modal" class="modal">
+    <span class="cerrar" onclick="cerrarModal()">&times;</span>
+    <img id="imagenGrande" class="modal-contenido">
+</div>
+</html>
